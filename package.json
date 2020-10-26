@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate-mern",
+  "version": "1.0.0",
+  "description": "boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "iclient": "cd client && npm install",
+    "iserver": "cd server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server/ && npm run start",
+    "client": "cd client/ && npm run start",
+    "test:client": "cd client && npm run test",
+    "test:server": "cd server && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "Wilber Pulido",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
